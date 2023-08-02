@@ -29,7 +29,7 @@ function playsound(name)
 
 
 //for the events that user clicks
-$(".btn").click(
+$(".btn").click(        //jquery($)
     function()
     {
         var userChosenColor=$(this).attr("id");//accesing that id
@@ -44,7 +44,7 @@ $(".btn").click(
 //The sequence that system generates
 function nextSequence()
 {
-    level++
+    level++;
     $("#level-title").text("level "+level)
 
     var randomNumber=Math.floor(Math.random()*4);
@@ -101,7 +101,7 @@ function checkAnswer(currentLevel)
 function startOver()
 {
     level=0;
-    started=false;
+    started=false;//this will enable to restart
     gamePattern=[];
     userClickedPattern=[];
     
