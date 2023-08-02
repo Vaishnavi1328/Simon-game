@@ -78,7 +78,7 @@ function checkAnswer(currentLevel)
         if(userClickedPattern.length==gamePattern.length)
         {
             setTimeout(nextSequence(),1000);
-            userClickedPattern=[];
+            
         }
     }
     else
